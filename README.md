@@ -2,8 +2,8 @@
 
 1. JDK 17 installed
 2. Maven installed
-3. (Optional) Docker installed to bootstrap redis service, alternatively redis host and port can be configured through
-   application.yml
+3. (Optional) Docker installed to bootstrap redis service, alternatively custom redis instance host and port can be
+   configured through application.yml
 
 ## Build and run
 
