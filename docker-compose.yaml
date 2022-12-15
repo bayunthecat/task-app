@@ -1,0 +1,17 @@
+volumes:
+  redis_data:
+
+services:
+  redis-service:
+    image: redis:latest
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: redis-server --appendfsync everysec --requirepass 12345
+    networks:
+      - task-app
+    volumes:
+      - redis_data:/data
+
+networks:
+  task-app:
